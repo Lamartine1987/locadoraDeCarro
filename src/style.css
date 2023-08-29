@@ -1,0 +1,156 @@
+:root{
+    --dark-blue: #363f5f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    padding: 2rem 0rem 10rem;
+    background: #2d4a22;
+}
+
+#logo{
+    font-weight: 100;
+    color: aliceblue;
+}
+
+body{
+    background: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    margin-top: -5rem;
+    margin-bottom: 15px;
+}
+
+.principal{
+    background: rgb(240, 240, 240);
+    width: min(90vw, 800px);
+    margin: auto;
+    padding: 2rem 2rem;
+    border-radius: 0.25rem;
+    color: var(--dark-blue);
+    display: flex;
+}
+
+button{
+    background: #5e9c48;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover{
+    background: #2d4a22;
+    border: none;
+    color: beige;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main{
+    background: rgb(240, 240, 240);
+    width: min(90vw, 800px);
+    margin: auto;
+    
+}    
+
+/* ------- Modal ----------*/
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    background: #f0f2f5;
+    padding: 2.4rem;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* ------ Form -------*/
+
+.form{
+    max-width: 500px;
+    width: 90%;
+}
+
+.form h2{
+    margin-top: 0;
+}
+
+input{
+    border: none;
+    border-radius: 0.2rem;
+
+    padding:  0.8rem;
+    width: 100%;
+}
+
+.input-group{
+    margin-top: 0.8rem;
+}
+
+.input-groups.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-groups.actions .button,
+.input-groups.actions button{
+    width: 48%;
+}
+
+.button.cancel{
+    color: #e92929;
+    text-decoration: none;
+    border: 2px solid #e92929;
+    border-radius: 20px;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    opacity: 0.6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.cancel:hover{
+    opacity: 1;
+    color: white;
+    background: #e92929;
+}
