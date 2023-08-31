@@ -51,6 +51,8 @@ button{
     margin-right: 5px;
     text-align: center;
     width: 100%;
+    outline: 0;
+    transition: all ease 0.3s;
 }
 
 button:hover{
@@ -114,6 +116,7 @@ button:hover{
 input{
     border: none;
     border-radius: 0.2rem;
+    outline: 0;
 
     padding:  0.8rem;
     width: 100%;
@@ -143,6 +146,7 @@ input{
     height: 50px;
     margin-top: 10px;
     opacity: 0.6;
+    transition: all ease 0.3s;
 
     display: flex;
     align-items: center;
@@ -153,4 +157,30 @@ input{
     opacity: 1;
     color: white;
     background: #e92929;
+}
+
+.content{
+    margin-top: 15px;
+}
+
+table{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+table th{
+    background-color: rgb(240, 240, 240);
+}
+
+table th, td{
+    text-align: left;
+    padding: 1px 5px;
+}
+
+table td img{
+    width: 25px;
+}
+
+.center{
+    text-align: center;
 }

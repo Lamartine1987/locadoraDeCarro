@@ -30,7 +30,7 @@
                 <h2>Cadastrar Veículo</h2>
                 <form action="">
                     <div class="input-group">
-                        <input type="text" id="description" name="description" placeholder="Marca">
+                        <input type="text" id="marca" name="description" placeholder="Marca">
                     </div>
 
                     <div class="input-group">
@@ -46,13 +46,27 @@
                     </div>
 
                     <div class="input-groups actions">
-                        <a onclick="carro.close()" href="" class="button cancel">Cancelar</a>
-                        <button>Salvar</button>
+                        <a onclick="carro.cancelar()" href="" class="button cancel">Cancelar</a>
+                        <button class="salvarCadastro" onclick="carro.salvar()">Salvar</button>
                     </div>
-
                 </form>
             </div>
         </div>
+    </div>
+
+    <div class="content">
+        <table>
+            <thead>
+                <th class="center">Marca</th>
+                <th>Nome</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody">
+            
+            </tbody>
+        </table>
     </div>
 
     <script src="script.js"></script>
